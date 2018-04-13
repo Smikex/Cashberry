@@ -1,0 +1,145 @@
+.header
+    height 100px
+    display flex
+    font-family "Proxima Nova"
+    font-size 25px
+    color #181818
+    &__menu
+        
+        display flex
+        list-style-type none
+        order 1
+        &Item
+            background-color #fff
+            display flex
+            padding 0 24px
+            align-items center
+            a
+                color #000 !important
+    &__img
+        // margin 20px
+        // margin-left 40px
+        display flex
+        width 58px
+        height 58px
+        &_flag
+            width 31px
+            height 31px
+    &__logo
+        order 1
+        display flex
+        align-items center
+    &__lang
+        order 1
+        display flex
+        &:before
+            content ''
+            background  url('../images/lang_before.png') 
+            position absolute
+            width 1px
+            height 19px
+            margin-left -24px
+.mobileBtn
+    display flex
+    align-self center
+    order 0
+    position relative
+    z-index 10002
+    width 30px
+    height 35px
+    cursor pointer
+    margin 30px
+    @media (min-width: $sm)
+        display none
+.mobileBtn
+    span
+        display block
+        position absolute
+        top 16px
+        left 0
+        height 2px
+        width 100%
+        background #000
+        transition all 0.3s
+
+.mobileBtn span:before, .mobileBtn span:after
+    position absolute
+    display block
+    left 0
+    width 100%
+    height 2px
+    background-color #000
+    content ""
+    transition all 0.3s
+
+.mobileBtn span:before 
+    top -8px
+
+.mobileBtn span:after 
+    bottom -8px
+
+.mobileBtnhover span:before 
+    top -9px
+
+.mobileBtnhover span:after 
+    bottom -9px
+
+.mobileBtn.active span
+    background transparent
+
+.mobileBtn.active span:before 
+    top 0
+    transform rotate(45deg)
+
+
+.mobileBtn.active span:after
+    bottom 0
+    transform rotate(-45deg)
+   
+
+@media (max-width: $sm)
+    .header
+        height 58px
+        font-size 18px
+        &__img
+            &_logo
+                width 31px
+                height 31px
+            &_flag
+                width 24px
+                height 24px 
+                align-self center 
+                margin 0 20px         
+        &__logo
+            flex-basis 70% 
+        &__lang:before
+            content none        
+        &__menu
+            flex-direction column
+            position fixed
+            z-index 10000
+            width 100%
+            height 100vh
+            margin 0
+            transition right .8s
+            top 0
+            padding-top 58px
+            text-align center
+            align-items flex-start
+            flex-wrap wrap
+            &Item
+                margin 10px 20px
+                padding 0 20px
+                width 80%
+                border-top 1px solid #000
+            &.topnav
+                display none
+            &.active
+                display flex
+                flex-direction column
+                width 320px
+                margin-top 58px
+                padding-left 0
+                background-color #fff
+
+

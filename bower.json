@@ -1,0 +1,24 @@
+{
+  "name": "shop",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "mikorn <info@webmikorn.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "normalize-css": "normalize.css#^6.0.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

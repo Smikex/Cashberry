@@ -1,0 +1,84 @@
+.heroBlock
+    background url('../images/bcg_hero.jpg')
+    background-size cover
+    display flex
+    @media (max-width: $sm)
+        flex-direction column
+    &__img
+        // flex-grow 0
+        // flex-shrink 0    
+        // max-width 100%
+        order 2
+        display flex
+        align-self center 
+        // flex-basis 40%
+    &__content
+        display flex
+        align-items center
+        flex-direction column
+        justify-content center
+        order 1
+        flex-basis 60%
+        // flex-shrink 1
+        align-items flex-start
+        @media (max-width: $sm)
+            order 2
+        &__header
+            color: #ffffff
+            font-family "Proxima Nova"
+            font-size 39px
+            font-weight 700
+            text-align center
+
+        &__descr
+            color #ffffff
+            font-family "Proxima Nova"
+            font-size 35px
+            font-weight 300
+            line-height 55px
+            margin 40px 0
+
+        &__button
+            display flex
+            color #ffffff
+            font-family "Proxima Nova"
+            font-size 25px
+            font-weight 400
+            line-height 55px
+            flex-wrap wrap
+            border none
+            &_buy
+                border-radius 5px
+                background-color #425a8f
+                background-image linear-gradient(to right, #27bbc0 0%, #623abf 100%)
+                padding 0 15px        
+            &_get
+                border-radius 5px
+                background-color #425a8f
+                background-image linear-gradient(to right, #f69023 0%, #bf3aae 100%)
+                padding 0 15px
+                @media (min-width: $sm)
+                    margin-left 23px
+    &Items
+        margin-top 35px
+        display flex
+        @media (max-width: $sm)
+            flex-direction column
+        &__item
+            display flex
+            flex-direction column
+            padding 20px
+            &_top
+                color #27bbc0
+                font-size 25px
+                font-weight 700
+            &_bottom
+                color #ffffff
+                font-size 18px
+                font-weight 400          
+    .container
+        align-items center
+        margin 220px auto
+        @media (max-width: $sm)
+            flex-direction column
+            margin 60px
