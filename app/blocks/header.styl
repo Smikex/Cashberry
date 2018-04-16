@@ -1,11 +1,16 @@
 .header
+    padding 0 30px
     height 100px
     display flex
+    justify-content space-between
     font-family "Proxima Nova"
     font-size 25px
     color #181818
+    span
+        @media(min-width: $sm )
+            display block 
     &__menu
-        
+        margin-bottom 0
         display flex
         list-style-type none
         order 1
@@ -17,7 +22,7 @@
             a
                 color #000 !important
     &__img
-        // margin 20px
+        margin 20px
         // margin-left 40px
         display flex
         width 58px
@@ -29,16 +34,20 @@
         order 1
         display flex
         align-items center
+    &__span
+        flex-direction column    
     &__lang
         order 1
         display flex
+        align-self center
         &:before
             content ''
             background  url('../images/lang_before.png') 
             position absolute
             width 1px
-            height 19px
-            margin-left -24px
+            height 31px
+            margin-left -35px
+            margin-top 22px
 .mobileBtn
     display flex
     align-self center

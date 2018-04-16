@@ -58,8 +58,12 @@ var paths = {
       },
       js: {
         src: [
-          './app/vendor/jquery/dist/jquery.min.js',
-          './app/vendor/bootstrap/dist/js/bootstrap.min.js'
+          // './app/vendor/highcharts/js/highstock.js',
+          // './app/vendor/highcharts/js/highcharts.js',
+          // './app/vendor/highcharts/modules/exporting.js',
+          // './app/vendor/highcharts/modules/export-data.js',
+          // './app/vendor/jquery/dist/jquery.min.js',
+          './app/vendor/bootstrap/dist/js/bootstrap.min.js',
         ],
         dest: './app/assets/js'
       },

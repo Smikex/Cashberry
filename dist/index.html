@@ -8,15 +8,222 @@
     <link rel="stylesheet" href="assets/css/vendor.min.css">
     <link rel="stylesheet" href="assets/css/common.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <script src="http://code.highcharts.com/stock/highstock.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body class="body">
     <div class="site">
-      <header class="site__header header"><a class="header__logo" href="index.html"><img src="assets/images/logo.png"></a></header>
-      <div class="site__content content">
-        <h1>Index</h1>
+      <header class="site__header header"><a class="header__logo" href="index.html"><img class="header__img header__img_logo" src="assets/images/logo.png">
+          <div class="header__pan"><span>Cashbery &nbsp;</span><span> Coin</span></div></a>
+        <ul class="header__menu topnav">
+          <li class="header__menuItem"> <a>How does it work</a></li>
+          <li class="header__menuItem"> <a>Wallets</a></li>
+          <li class="header__menuItem"> <a>Exchanges</a></li>
+          <li class="header__menuItem"> <a>Community</a></li>
+          <li class="header__menuItem"> <a>How does it work</a></li>
+          <li class="header__menuItem"> <a>Press</a></li>
+        </ul>
+        <div class="header__lang"><img class="header__img header__img_flag" src="assets/images/lang.png"></div>
+        <div class="mobileBtn"><span></span></div>
+      </header>
+      <div class="heroBlock">
+        <div class="container">
+          <div class="heroBlock__img"><img class="img-responsive" src="assets/images/hero.png"></div>
+          <div class="heroBlock__content">
+            <h1 class="heroBlock__content__header">New Way of Transfering</br> Cash All Over the World</h1>
+            <div class="heroBlock__content__descr">Fast. Chip. Reliable.</div>
+            <div class="heroBlock__content__button">
+              <button class="heroBlock__content__button heroBlock__content__button_buy">Buy Cashbery Coins</button>
+              <button class="heroBlock__content__button heroBlock__content__button_get">Get Wallet</button>
+            </div>
+            <div class="heroBlockItems">
+              <div class="heroBlockItems__item">
+                <div class="heroBlockItems__item_top">$680.600.300</div>
+                <div class="heroBlockItems__item_bottom">Market Capitalization</div>
+              </div>
+              <div class="heroBlockItems__item">
+                <div class="heroBlockItems__item_top">23 900</div>
+                <div class="heroBlockItems__item_bottom">Loyal Users</div>
+              </div>
+              <div class="heroBlockItems__item">
+                <div class="heroBlockItems__item_top">$2.800.300</div>
+                <div class="heroBlockItems__item_bottom">Market Capitalization              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="container video__content">
+          <iframe src="https://www.youtube.com/embed/4rVNr0kY1zU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="advantages">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 advantagesBlock">
+              <div class="advantagesBlockLine">
+                <div class="advantagesBlockLine__line advantagesBlockLine__line_first"></div>
+              </div>
+              <div class="advantagesBlock__title">For Individuals</div>
+              <div class="advantagesBlock__header">Protection of Privacy</div>
+              <div class="advantagesBlock__descr">Quick start with one of the most easy-to-use wallets to be a part of the Bytecoin ecosystem.</div>
+              <button class="advantagesBlock__button">Learn to Start</button>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 advantagesBlock">
+              <div class="advantagesBlockLine">
+                <div class="advantagesBlockLine__line advantagesBlockLine__line_second"></div>
+                <div class="advantagesBlockLine__line advantagesBlockLine__line_second"></div>
+              </div>
+              <div class="advantagesBlock__title">For Business</div>
+              <div class="advantagesBlock__header">Minimized Risks</div>
+              <div class="advantagesBlock__descr">Your path to start the safest business cooperation with an enterprise-ready solution based on blockchain.</div>
+              <button class="advantagesBlock__button">Learn to Start</button>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 advantagesBlock">
+              <div class="advantagesBlockLine">
+                <div class="advantagesBlockLine__line advantagesBlockLine__line_third"></div>
+                <div class="advantagesBlockLine__line advantagesBlockLine__line_third"></div>
+                <div class="advantagesBlockLine__line advantagesBlockLine__line_third"></div>
+              </div>
+              <div class="advantagesBlock__title">For Investors</div>
+              <div class="advantagesBlock__header">Maximum Growth</div>
+              <div class="advantagesBlock__descr">We’ve got the special solutions for those who’d like to store their funds in a private and secure way.</div>
+              <button class="advantagesBlock__button">Learn to Start    </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wallet">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="walletButtons"><a class="walletButtons__link walletButtons__link_active walletButtons__link_desktop">Desktop Wallet</a><a class="walletButtons__link walletButtons__link_mobile">Mobile Wallet</a></div>
+              <div class="walletBlock walletBlock_desktop">
+                <div class="walletBlock__title">Wallet for Everyone</div>
+                <div class="walletBlock__descr">The Cashbery Desktop Wallet is natively built for all major Operating Systems. Our full HD wallet meets the top security standards in the industry and supports the Ledger Nano S secure hardware wallet. ARK wallets connect to fully synced network peers removing the need to download the full blockchain.</div>
+                <div class="walletBlockApp"><a class="walletBlockApp__icon walletBlockApp__icon_win" href="#"><img src="assets/images/win.png"></a><a class="walletBlockApp__icon walletBlockApp__icon_mac" href="#"><img src="assets/images/mac.png"></a><a class="walletBlockApp__icon walletBlockApp__icon_lin" href="#"><img src="assets/images/linux.png"></a></div>
+              </div>
+              <div class="walletBlock walletBlock_mobile walletBlock_none">
+                <div class="walletBlock__title">Wallet for Everyone</div>
+                <div class="walletBlock__descr">The Cashbery Desktop Wallet is natively built for all major Operating Systems. Our full HD wallet meets the top security standards in the industry and supports the Ledger Nano S secure hardware wallet. ARK wallets connect to fully synced network peers removing the need to download the full blockchain.</div>
+                <div class="walletBlockApp"><a class="walletBlockApp__icon walletBlockApp__icon_win" href="#"><img src="assets/images/win.png"></a><a class="walletBlockApp__icon walletBlockApp__icon_mac" href="#"><img src="assets/images/mac.png"></a></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="walletBlock__img"><img class="img-responsive walletBlock__img_desktop" src="assets/images/desktop.png" alt=""><img class="hidden img-responsive walletBlock__img_mobile" src="assets/images/mobile.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="exchanges container">
+        <div class="exchanges__header">Exchanges</div>
+        <div class="exchanges__descr">Cryptocurrency exchange is a service to buy and sell Cashbery Coins for Bitcoins(BTC) and fiat currency. The exchange rate fluctuates in real-time based on the demand and supply of other users.</div>
+        <div class="row">
+          <div class="excangesBlock col-md-3">
+            <div class="excangesBlock__wrap"><img class="excangesBlock__img" src="assets/images/hitbtc.png" alt="">
+              <div class="excangesBlock__title">HitBTC</div>
+              <div class="excangesBlock__descr">Large and innovative  cryptocurrency exchange            </div>
+            </div>
+          </div>
+          <div class="excangesBlock col-md-3">
+            <div class="excangesBlock__wrap"><img class="excangesBlock__img" src="assets/images/crypto.png" alt="">
+              <div class="excangesBlock__title">Cryptonator</div>
+              <div class="excangesBlock__descr">Buy Cashbery Coins for EUR/USD/RUR/UAH            </div>
+            </div>
+          </div>
+          <div class="excangesBlock col-md-3">
+            <div class="excangesBlock__wrap"><img class="excangesBlock__img" src="assets/images/stock.png" alt="">
+              <div class="excangesBlock__title">Stocks.exchange</div>
+              <div class="excangesBlock__descr">CBC/Bitcoin and CBC/ETH pairs always to trade                    </div>
+            </div>
+          </div>
+          <div class="excangesBlock col-md-3">
+            <div class="excangesBlock__wrap"><img class="excangesBlock__img" src="assets/images/coinspot.png" alt="">
+              <div class="excangesBlock__title">Coinspot</div>
+              <div class="excangesBlock__descr">Buy Cashbery Coins directly and instantly using AUD       </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="highchart">
+        <div class="container">
+          <div id="highchart"></div>
+        </div>
+      </div>
+      <div class="community">
+        <div class="container communityWrap">
+          <div class="community__title">Community</div>
+          <div class="communitySocial"><a class="communitySocial__ico communitySocial__ico_facebook" href="http://facebook.com"></a><a class="communitySocial__ico communitySocial__ico_twitter" href="http://twitter.com"></a><a class="communitySocial__ico communitySocial__ico_linkedin" href="http://linkedin.com"></a><a class="communitySocial__ico communitySocial__ico_instagram" href="http://instagram.com">                               </a><a class="communitySocial__ico communitySocial__ico_telegram" href="http://telegram.com"></a><a class="communitySocial__ico communitySocial__ico_vimeo" href="http://vimeo.com"></a><a class="communitySocial__ico communitySocial__ico_pinterest" href="http://pinterest.com"></a></div>
+          <div class="communityFeed"><a class="communityFeed__link communityFeed__link_feedback" href="http://facebook.com">Feedback<img class="communityFeed_img" src="assets/images/mail.png" alt=""></a><a class="communityFeed__link communityFeed__link_callUS" href="http://facebook.com">Call Us<img class="communityFeed_img" src="assets/images/call.png" alt=""></a></div>
+        </div>
+      </div>
+      <div class="exchanges container">
+        <div class="exchanges__header">Press About Us</div><a class="exchangesBlock__link exchangesBlock__link_top" href="#">- See All Press Releases</a>
+        <div class="row">
+          <div class="excangesBlock col-md-3">
+            <div class="excangesBlock__wrap"><img class="excangesBlock__img" src="assets/images/press1.png" alt="">
+              <div class="excangesBlock__descr exchangesBlock__descr_about">Large and innovative  cryptocurrency exchange            </div><a class="exchangesBlock__link" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="excangesBlock col-md-3">
+            <div class="excangesBlock__wrap"><img class="excangesBlock__img" src="assets/images/press2.png" alt="">
+              <div class="excangesBlock__descr exchangesBlock__descr_about">Buy Cashbery Coins for EUR/USD/RUR/UAH            </div><a class="exchangesBlock__link" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="excangesBlock col-md-3">
+            <div class="excangesBlock__wrap"><img class="excangesBlock__img" src="assets/images/press3.png" alt="">
+              <div class="excangesBlock__descr exchangesBlock__descr_about">CBC/Bitcoin and CBC/ETH pairs always to trade                    </div><a class="exchangesBlock__link" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="excangesBlock col-md-3s">
+            <div class="excangesBlock__wrap"><img class="excangesBlock__img" src="assets/images/press4.png" alt="">
+              <div class="excangesBlock__descr exchangesBlock__descr_about">Buy Cashbery Coins directly and instantly using AUD</div><a class="exchangesBlock__link" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
       </div>
       <footer class="site__footer footer">
-        <h1>Footer</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 footerRights">2018 © Cashbery Coin All rights reserved</div>
+            <div class="col-md-3 footerCommunity">
+              <div class="footer__title">Community</div>
+              <ul>
+                <li><a class="footerCommunity__link" href="#"><img src="assets/images/facebook.png">Facebook	 </a></li>
+                <li><a class="footerCommunity__link" href="#"><img src="assets/images/twitter.png">Twitter</a></li>
+                <li><a class="footerCommunity__link" href="#"><img src="assets/images/linkedin.png">Linkedin</a></li>
+                <li> <a class="footerCommunity__link" href="#"><img src="assets/images/instagram.png">Instagram	</a></li>
+                <li><a class="footerCommunity__link" href="#"><img src="assets/images/telegram.png">Telegram</a></li>
+                <li><a class="footerCommunity__link" href="#"><img src="assets/images/vimeo.png">Vimeo</a></li>
+                <li><a class="footerCommunity__link" href="#"><img src="assets/images/pinterest.png">Pinterest</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 footerAbout">
+              <div class="footer__title">About</div>
+              <ul>
+                <li><a class="footerAbout__link" href="#">How does it work</a></li>
+                <li><a class="footerAbout__link" href="#">Wallets</a></li>
+                <li><a class="footerAbout__link" href="#">Exchanges</a></li>
+                <li><a class="footerAbout__link" href="#">Community	</a></li>
+                <li><a class="footerAbout__link" href="#">Press</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 footerSibscribe">
+              <div class="footer__title">Sibscribe</div>
+              <ul>
+                <li>How does it work</li>
+              </ul>
+              <form class="footerForm">
+                <div class="footerForm__input">
+                  <input type="email" placeholder="Enter Your Email">
+                </div>
+                <button class="footerForm__button">SUBSCRIBE</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="assets/js/vendor.min.js"></script>

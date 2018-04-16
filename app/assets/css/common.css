@@ -14,6 +14,21 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
 }
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.exchangesBlock__descr_about {
+  font-weight: 700 !important;
+}
+.exchangesBlock__link {
+  color: #516bab;
+  font-weight: 700;
+}
+.exchangesBlock__link_top {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
 .advantages {
   padding: 120px 0;
   background-color: #121c31;
@@ -86,6 +101,153 @@ a:hover {
   border-radius: 5px;
   background-image: linear-gradient(to right, #27bbc0 0%, #623abf 100%);
 }
+.community {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #222a3f;
+  padding: 55px 0;
+}
+.communityWrap {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.community__title {
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Proxima Nova";
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .community__title {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+.communitySocial {
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .communitySocial {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.communitySocial__ico {
+  margin: 0 5px;
+  width: 48px;
+  height: 48px;
+}
+.communitySocial__ico_facebook {
+  background-image: url("../images/sprite.png");
+}
+.communitySocial__ico_twitter {
+  background-image: url("../images/sprite.png");
+  background-position: 48px 0px;
+}
+.communitySocial__ico_linkedin {
+  background-image: url("../images/sprite.png");
+  background-position: -115px 0px;
+}
+.communitySocial__ico_instagram {
+  background-image: url("../images/sprite.png");
+  background-position: -172px 0px;
+}
+.communitySocial__ico_telegram {
+  background-image: url("../images/sprite.png");
+  background-position: -229px 0px;
+}
+.communitySocial__ico_vimeo {
+  background-image: url("../images/sprite.png");
+  background-position: -286px 0px;
+}
+.communitySocial__ico_pinterest {
+  background-image: url("../images/sprite.png");
+  background-position: -343px 0px;
+}
+.communityFeed {
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .communityFeed {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+.communityFeed__link {
+  color: #fff;
+  font-family: "Proxima Nova";
+  font-size: 25px;
+  font-weight: 400;
+}
+.communityFeed_img {
+  margin: 0 15px;
+}
+.exchanges {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 100px auto;
+}
+.exchanges__header {
+  color: #222;
+  font-family: "Proxima Nova";
+  font-size: 50px;
+  font-weight: 700;
+}
+.exchanges__descr {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 35px 0 50px;
+}
+.excangesBlock {
+  padding: 0 10px;
+}
+.excangesBlock__wrap {
+  padding: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border: 1px solid #e9e9e9;
+}
+.excangesBlock__img {
+  height: 65px;
+  width: auto;
+}
+.excangesBlock__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 26px;
+}
+.excangesBlock__descr {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 22px;
+}
 @font-face {
   font-family: 'Proxima Nova';
   font-style: 300;
@@ -122,14 +284,23 @@ a:hover {
   src: url("../fonts/Open Sans/OpenSans-Regular.otf");
 }
 .header {
+  padding: 0 30px;
   height: 100px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   font-family: "Proxima Nova";
   font-size: 25px;
   color: #181818;
 }
+@media (min-width: 768px) {
+  .header span {
+    display: block;
+  }
+}
 .header__menu {
+  margin-bottom: 0;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
@@ -148,6 +319,7 @@ a:hover {
   color: #000 !important;
 }
 .header__img {
+  margin: 20px;
   display: -ms-flexbox;
   display: flex;
   width: 58px;
@@ -165,19 +337,26 @@ a:hover {
   -ms-flex-align: center;
       align-items: center;
 }
+.header__span {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
 .header__lang {
   -ms-flex-order: 1;
       order: 1;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .header__lang:before {
   content: '';
   background: url("../images/lang_before.png");
   position: absolute;
   width: 1px;
-  height: 19px;
-  margin-left: -24px;
+  height: 31px;
+  margin-left: -35px;
+  margin-top: 22px;
 }
 .mobileBtn {
   display: -ms-flexbox;
@@ -429,6 +608,10 @@ a:hover {
     margin: 60px;
   }
 }
+.highchart {
+  padding: 50px 0;
+  box-shadow: inset 0 0 65px rgba(0,0,0,0.08);
+}
 .video {
   background: url("../images/bg_video.jpg");
   padding: 80px 0;
@@ -514,6 +697,70 @@ a:hover {
   margin-right: 20px;
 }
 .footer {
-  background-color: #181818;
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+.footer .container {
+  display: block;
+}
+.footer__title {
+  font-family: "Proxima Nova";
+  font-size: 25px;
+  font-weight: 400;
+}
+.footerRights {
+  font-size: 13px;
+  font-weight: 400;
+}
+.footerCommunity li {
+  padding-top: 10px;
+}
+.footerCommunity img {
+  margin: 0 5px;
+}
+.footerCommunity__link {
+  font-size: 14px;
+  font-weight: 400;
+}
+.footerAbout li,
+.footerSibscribe li {
+  padding-top: 10px;
+}
+.footerForm__input:before {
+  content: '';
+  position: absolute;
+  background: url("../images/mail_ico.png");
+  width: 18px;
+  height: 13px;
+  margin-top: 16px;
+  margin-left: 220px;
+}
+.footerForm__input input {
+  width: 262px;
+  height: 45px;
+  border: none;
+}
+.footerForm__input input[placeholder] {
+  padding-left: 10px;
+  font-size: 13px;
+}
+.footerForm__button {
+  margin-top: 25px;
+  background-image: linear-gradient(to right, #27bbc0 0%, #623abf 100%);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
   color: #fff;
+  border: none;
+  padding: 10px 45px 10px 25px;
+  border-radius: 3px;
+}
+.footerForm__button:after {
+  content: '';
+  position: absolute;
+  background: url("../images/rect_ico.png");
+  width: 6px;
+  height: 10px;
+  margin-top: 7px;
+  margin-left: 15px;
 }

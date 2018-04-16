@@ -1,3 +1,59 @@
 .footer
-	background-color baseColor
-	color lightColor
+	padding 100px 0  
+	background-color #f5f5f5
+	.container
+		display block
+	&__title
+		font-family "Proxima Nova"
+		font-size 25px
+		font-weight 400	
+	&Rights
+		font-size 13px
+		font-weight 400	
+	&Community
+		li
+			padding-top 10px
+		img
+			margin 0 5px	
+		&__link
+			font-size 14px
+			font-weight 400
+	&About, &Sibscribe
+		li
+			padding-top 10px
+	&Form
+		&__input
+			&:before
+				content ''
+				position absolute
+				background url('../images/mail_ico.png')
+				width 18px
+				height 13px
+				margin-top 16px
+				margin-left 220px
+			input 
+				width 262px
+				height 45px
+				border none
+				&[placeholder]
+					padding-left 10px
+					font-size 13px
+		&__button
+			margin-top 25px
+			background-image linear-gradient(to right, #27bbc0 0%, #623abf 100%)
+			font-size 14px
+			font-weight 700
+			line-height 25px
+			color #fff
+			border none
+			padding 10px 45px 10px 25px
+			border-radius 3px
+			&:after
+				content ''
+				position absolute
+				background url('../images/rect_ico.png')
+				width 6px
+				height 10px
+				margin-top 7px
+				margin-left 15px
+

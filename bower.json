@@ -20,5 +20,8 @@
     "normalize-css": "normalize.css#^6.0.0",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0"
+  },
+  "dependencies": {
+    "highcharts": "^6.1.0"
   }
 }
