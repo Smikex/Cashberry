@@ -9,10 +9,32 @@
             font-size 25px
             font-weight 400
             color #222222
-            margin-right 20px
+            margin-right 20px 
             &_active
                 border-bottom 2px solid #613ebf
                 color #613ebf
+        @media (max-width $sm)
+            justify-content center                
+    .container
+        flex-direction column
+        .row
+            @media (max-width $md)
+                display flex
+                flex-direction column          
+    &__block
+        display flex
+        &_img
+            order 0
+            display flex
+            justify-content center
+            padding 50px
+        &_descr
+            order 1
+            display flex    
+            justify-content center
+            @media (max-width $md)
+                align-items center
+            
 
     &Block
         &_none
@@ -23,9 +45,14 @@
             font-size 54px
             font-weight 700 
             padding 54px 0 29px
+            @media (max-width $sm)
+                font-size 39px
+                text-align center             
         &__descr
+            font-family "Open Sans"
             color #222222
             padding-bottom 29px
+            font-size 16px
         &__img
             display flex
             justify-content center
@@ -35,5 +62,7 @@
                 display flex 
         &App
             display flex
+            @media (max-width $md)
+                justify-content center
             &__icon
                 margin-right 20px                 

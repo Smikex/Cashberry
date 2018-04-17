@@ -1,10 +1,10 @@
-.wallet
+#wallet.wallet
     .container
+        .walletButtons
+            a.walletButtons__link.walletButtons__link_active.walletButtons__link_desktop Desktop Wallet
+            a.walletButtons__link.walletButtons__link_mobile Mobile Wallet
         .row
-            .col-md-6.col-sm-6.col-xs-12
-                .walletButtons
-                    a.walletButtons__link.walletButtons__link_active.walletButtons__link_desktop Desktop Wallet
-                    a.walletButtons__link.walletButtons__link_mobile Mobile Wallet
+            .col-md-6.col-sm-12.wallet__block.wallet__block_descr
                 .walletBlock.walletBlock_desktop
                     .walletBlock__title Wallet for Everyone
                     .walletBlock__descr The Cashbery Desktop Wallet is natively built for all major Operating Systems. Our full HD wallet meets the top security standards in the industry and supports the Ledger Nano S secure hardware wallet. ARK wallets connect to fully synced network peers removing the need to download the full blockchain.
@@ -23,7 +23,7 @@
                             img(src='assets/images/win.png') 
                         a.walletBlockApp__icon.walletBlockApp__icon_mac(href='#')
                             img(src='assets/images/mac.png') 
-            .col-md-6.col-sm-6.col-xs-12
+            .col-md-6.col-sm-12.col-xs-12.wallet__block.wallet__block_img
                 .walletBlock__img
                     img.img-responsive.walletBlock__img_desktop(src="assets/images/desktop.png", alt="")
                     img.hidden.img-responsive.walletBlock__img_mobile(src="assets/images/mobile.png", alt="")

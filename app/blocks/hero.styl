@@ -5,13 +5,13 @@
     @media (max-width: $sm)
         flex-direction column
     &__img
-        // flex-grow 0
-        // flex-shrink 0    
-        // max-width 100%
         order 2
         display flex
-        align-self center 
-        // flex-basis 40%
+        align-self center
+        align-items flex-start
+        @media(max-width: $sm)
+            // display block
+            margin 50px 0 
     &__content
         display flex
         align-items center
@@ -19,7 +19,6 @@
         justify-content center
         order 1
         flex-basis 60%
-        // flex-shrink 1
         align-items flex-start
         @media (max-width: $sm)
             order 2
@@ -29,7 +28,6 @@
             font-size 39px
             font-weight 700
             text-align center
-
         &__descr
             color #ffffff
             font-family "Proxima Nova"
@@ -37,16 +35,30 @@
             font-weight 300
             line-height 55px
             margin 40px 0
-
+            @media (max-width: $lg)
+                font-size 25px
+                align-self center
+            @media (max-width: $sm)
+                margin 20px 0    
         &__button
             display flex
             color #ffffff
-            font-family "Proxima Nova"
+            font-family "Open Sans"
             font-size 25px
             font-weight 400
             line-height 55px
             flex-wrap wrap
             border none
+            @media (max-width: $sm)
+                max-width 216px
+                flex-basis 100%
+                align-self center
+                font-size 18px
+                text-align center
+                margin auto
+                margin-top 7px
+                justify-content center 
+                
             &_buy
                 border-radius 5px
                 background-color #425a8f
@@ -64,21 +76,30 @@
         display flex
         @media (max-width: $sm)
             flex-direction column
+            align-self center
         &__item
             display flex
             flex-direction column
             padding 20px
+            align-self center
+            align-items center
+            @media (max-width: $sm)
+                padding 10px
             &_top
                 color #27bbc0
                 font-size 25px
                 font-weight 700
+                @media (max-width: $sm)
+                    font-size 18px
             &_bottom
                 color #ffffff
                 font-size 18px
-                font-weight 400          
+                font-weight 400
+                @media (max-width: $sm)
+                    font-size 14px          
     .container
         align-items center
         margin 220px auto
         @media (max-width: $sm)
             flex-direction column
-            margin 60px
+            margin 30px 15px

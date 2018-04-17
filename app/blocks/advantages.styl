@@ -30,16 +30,23 @@
             font-size 35px
             font-weight 700
             padding 50px 0 29px 0
+            @media (max-width $sm)
+                font-size 25px
         &__header
             color #28b8c0
             font-family "Proxima Nova"
             font-size 25px
-            font-weight 400                
+            font-weight 400
+            @media (max-width $sm)
+                font-size 25px                
         &__descr
             color #ffffff
             font-size 18px
             font-weight 400
             padding 24px 0 34px 0
+            @media (max-width $sm)
+                font-size 14px    
+                text-align center        
         &__button
             color #ffffff
             font-size 18px
@@ -47,5 +54,7 @@
             padding 15px 32px
             border none
             border-radius 5px
-            background-image linear-gradient(to right, #27bbc0 0%, #623abf 100%)    
+            background-image linear-gradient(to right, #27bbc0 0%, #623abf 100%) 
+            @media (max-width $sm)
+                font-size 14px                  
 

@@ -8,6 +8,22 @@ mobileBtn.on('click',  function(event) {
  menu.toggleClass('active');
 });
 
+$('.header__menuItem').click(function(){
+$('.header__menu').toggleClass('active');
+$(".mobileBtn").toggleClass('active');
+});
+
+// easy
+
+$(document).ready(function(){
+  $(".header__menu").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
+
 // tabs
 
 $('.walletButtons__link_mobile').click(function(){
@@ -35,7 +51,7 @@ $('.walletButtons__link_desktop').click(function(){
 Highcharts.chart('highchart', {
   chart: {
       type: 'areaspline',
-      width: 1170
+      // size: 100%
   },
   title: {
     margin: 40,
